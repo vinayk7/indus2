@@ -7,7 +7,15 @@
     
     <script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
     <script src="https://www.googletagmanager.com/gtag/js?id=UA-47795566-10"></script>
-    
+    <script>
+            var timerStart = Date.now();
+            console.log("initialised @: %c"+ (Date.now()-timerStart) + ' ms', 'color:blue;');///DEBUG 
+
+            window.addEventListener('load', function(){
+                console.log("Page load complete@: %c "+ (Date.now()-timerStart) + ' ms ', 'color:white;background-color:darkviolet'); 
+                //alert('Page loading took: ' +  ((Date.now()-timerStart)/1000).toFixed(2) + ' seconds' )
+            });
+    </script>
 <head>
     <title>Indus News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
